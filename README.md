@@ -54,11 +54,33 @@ export default new Vuex.Store({
 });
 ```
 
+### Replace HelloWorld.vue with Home.vue
+``` bash
+<template>
+  <div class="home">
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Home',
+  data() {
+    return {};
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+</style>
+
+```
+
 ### router/index.js
 ``` bash
 import Vue from 'vue';
 import Router from 'vue-router';
-import Helloworld from '@/components/Helloworld';
+import Home from '@/components/Home';
 import Page404 from '@/components/Page404';
 
 Vue.use(Router);
@@ -67,18 +89,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'helloworld',
-      component: Helloworld,
+      name: 'home',
+      component: Home,
       meta: {
-        title: 'Helloworld',
+        title: 'Home',
         metaTags: [
           {
             name: 'description',
-            content: 'Helloworld',
+            content: 'Home',
           },
           {
             property: 'og:description',
-            content: 'helloworld',
+            content: 'home',
           },
         ],
       },
