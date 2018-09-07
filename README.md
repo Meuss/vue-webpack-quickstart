@@ -95,6 +95,7 @@ export default new Router({
 
 ### main.js
 ``` bash
+/* eslint-disable */
 import Vue from 'vue';
 import App from './App';
 import router from './router';
