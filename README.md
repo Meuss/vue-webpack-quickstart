@@ -37,7 +37,8 @@ extends: ['plugin:vue/essential', 'airbnb-base', 'prettier'],
 plugins: ['vue', 'prettier'],
 ...
 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-'prettier/prettier': ['error']
+'prettier/prettier': ['error'],
+'no-console': 0,
 ```
 
 ### .prettierrc
