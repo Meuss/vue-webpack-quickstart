@@ -20,7 +20,18 @@ npm i sass-loader node-sass prettier eslint-config-prettier eslint-plugin-pretti
 npm i vuex gsap -S
 ```
 
-### .eslintrc.js
+### vscode user settings, for prettier to work correctly with eslint
+``` bash
+"editor.formatOnSave": false,
+"[javascript]": {
+  "editor.formatOnSave": true
+},
+"[vue]": {
+  "editor.formatOnSave": true
+}
+```
+
+### .eslintrc.js (with airbnb)
 ``` bash
 extends: ['plugin:vue/essential', 'airbnb-base', 'prettier'],
 plugins: ['vue', 'prettier'],
