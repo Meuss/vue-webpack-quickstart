@@ -16,7 +16,7 @@
 vue init webpack project-name
 ...
 cd project-name
-npm i sass-loader node-sass -D
+npm i sass-loader node-sass prettier eslint-config-prettier eslint-plugin-prettier -D
 npm i vuex gsap -S
 ```
 
