@@ -82,7 +82,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 </style>
 
@@ -135,22 +134,22 @@ import App from './App';
 import router from './router';
 import store from './store/store';
 
-# others I often use:
-# import VueScrollReveal from 'vue-scroll-reveal';
+// others I often use:
+// import VueScrollReveal from 'vue-scroll-reveal';
 
 Vue.config.productionTip = false;
 
-# Vue.use(VueScrollReveal, {
-#   // https://github.com/scrollreveal/scrollreveal/wiki/Getting-Started-(v3.x)
-#   duration: 2000,
-#   easing: 'cubic-bezier(0.2, 0.94, 0.11, 1)',
-#   scale: 1,
-#   opacity: 0.1,
-#   distance: '200px',
-#   viewFactor: 0.2,
-# });
+// Vue.use(VueScrollReveal, {
+//   // https://github.com/scrollreveal/scrollreveal/wiki/Getting-Started-(v3.x)
+//   duration: 2000,
+//   easing: 'cubic-bezier(0.2, 0.94, 0.11, 1)',
+//   scale: 1,
+//   opacity: 0.1,
+//   distance: '200px',
+//   viewFactor: 0.2,
+// });
 
-# https://alligator.io/vuejs/vue-router-modify-head/
+// https://alligator.io/vuejs/vue-router-modify-head/
 router.beforeEach((to, from, next) => {
   const nearestWithTitle = to.matched
     .slice()
